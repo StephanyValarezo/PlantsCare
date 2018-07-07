@@ -6,12 +6,16 @@ SoftwareSerial Serial1(2,3); // RX, TX
 String content;
 float humedad = 333.0;
 float temperatura=333.0;
-boolean ventilador= false;
-char ssid[] = "NLRICVAL";            // your network SSID (name)
-char pass[] = "oracionparamami";        // your network password
+//boolean ventilador= false;
+//char ssid[] = "NLRICVAL";            // your network SSID (name)
+//char pass[] = "oracionparamami";        // your network password
 int status = WL_IDLE_STATUS;     // the Wifi radio's status
-char server[] = "luibasantes.pythonanywhere.com";
+///char server[] = "luibasantes.pythonanywhere.com";
 
+#define ventilador false
+#define pass "oracionparamami"
+#define ssid "NLRICVAL"
+#define server "luibasantes.pythonanywhere.com"
 WiFiEspClient client;
 
 void printWifiStatus()
